@@ -5,12 +5,10 @@ const { HTTP_STATUS_OK, HTTP_STATUS_CREATED } = require('http2').constants;
 const bcrypt = require('bcryptjs'); // импортируем bcrypt
 const jwt = require('jsonwebtoken');
 const { default: mongoose } = require('mongoose');
-
-const { NODE_ENV, SECRET_KEY } = process.env;
+// const SECRET_SIGNING_KEY = require('../utils/constants');
 const BadRequestError = require('../errors/BadRequestError');
 const NotFoundError = require('../errors/NotFoundError');
 const ConflictError = require('../errors/ConflictError');
-
 // npm
 const User = require('../models/user');
 
@@ -87,7 +85,7 @@ module.exports.login = (req, res, next) => {
     .then((user) => {
       const token = jwt.sign(
         { _id: user._id },
-        NODE_ENV === 'production' ? SECRET_KEY : 'dev-secret',
+        'some-secret-key',
         { expiresIn: '7d' },
       );
       res.send({ token });

@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -8,8 +7,6 @@ const cors = require('cors');
 const { errors } = require('celebrate');
 const { errorHandler } = require('./middlewares/errorHandler');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
-
-// console.log(process.env);
 
 // Слушаем 3000 порт, mestodb — имя базы данных, которая будет создана.
 const { PORT = 3000, DB_URL = 'mongodb://127.0.0.1:27017/mestodb' } = process.env;

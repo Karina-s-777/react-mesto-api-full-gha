@@ -28,7 +28,7 @@ class Api {
       headers: {
         "Authorization" : `Bearer ${token}`
       },
-    }).then(this._checkResponse)
+    }).then(this._checkResponse);
   }
 
   setUserAvatar(data, token) {
@@ -101,7 +101,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: "api.karina.nomoredomainsicu.ru",
+  baseUrl: "http://api.karina.nomoredomainsicu.ru",
 });
 
 export default api;

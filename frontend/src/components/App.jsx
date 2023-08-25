@@ -230,6 +230,7 @@ function App() {
         // тогда делаем для setIsLike false (лайк становится неактивным)
         .then((res) => {
           setCards((state) => state.map((c) => (c._id === card._id ? res : c)));
+          console.log(card._id)
         })
         .catch((err) => console.error(`Ошибка при снятии лайка ${err}`));
     } // иначе при положительном запросе setIsLike(true) - лайк ставится

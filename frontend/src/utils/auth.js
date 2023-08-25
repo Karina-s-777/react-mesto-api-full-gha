@@ -1,4 +1,4 @@
-const baseUrl = "api.karina.nomoredomainsicu.ru"
+const baseUrl = "http://api.karina.nomoredomainsicu.ru"
 
 // добавляем функцию, общую для всех запросов, как в api
 function getResponseData(res) {
