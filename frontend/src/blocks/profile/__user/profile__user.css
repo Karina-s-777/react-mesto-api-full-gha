@@ -1,0 +1,10 @@
+.profile__user{
+    display: flex;
+    align-items: baseline;
+}
+
+@media screen and (max-width: 1100px) {
+    .profile__user {
+      padding-left: 47px;
+}
+}

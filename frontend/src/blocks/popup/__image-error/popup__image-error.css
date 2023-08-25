@@ -1,0 +1,8 @@
+.popup__image-error {
+    background-image: url(../../../images/UnionNoOk.png);
+    background-size:auto;
+    background-repeat: no-repeat;
+    padding: 0px;
+    height: 180px;
+    background-position: center;
+}

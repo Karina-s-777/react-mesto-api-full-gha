@@ -1,0 +1,8 @@
+.popup__image-successful {
+    background-image: url(../../../images/UnionOk.png);
+    background-size:auto;
+    background-repeat: no-repeat;
+    padding: 0px;
+    height: 180px;
+    background-position: center;
+}

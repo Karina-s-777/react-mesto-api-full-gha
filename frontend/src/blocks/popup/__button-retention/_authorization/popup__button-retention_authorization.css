@@ -1,0 +1,12 @@
+.popup__button-retention_authorization {
+    color: #000;
+    border-radius: 2px;
+    background: #FFF;
+    font-size: 18px;
+    margin: 186px 0 15px 0;
+}
+
+.popup__button-retention:hover {
+    background: rgba(255, 255, 255, 0.8);
+    cursor: url(../../../../images/Pointer.png) 2 2, pointer;
+}

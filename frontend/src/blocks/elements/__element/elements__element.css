@@ -1,0 +1,10 @@
+.elements__element {
+    background: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    max-width: 282px;
+    min-height: 361px;
+    overflow: hidden;
+    position: relative;
+}
+

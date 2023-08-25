@@ -1,0 +1,6 @@
+.popup__button-retention_disabled {
+  color: #000;
+  background-color: white;
+  border: 1px solid black;
+  opacity: 0.2;
+}

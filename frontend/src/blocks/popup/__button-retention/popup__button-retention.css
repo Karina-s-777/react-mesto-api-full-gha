@@ -1,0 +1,27 @@
+.popup__button-retention {
+    background-color: #000;
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 358px;
+    height: 50px;
+    color: #fff;
+    margin: 18px 0 37px 0;
+    padding: 0;
+    border-radius: 2px;
+    border: none;
+}
+
+.popup__button-retention:hover {
+background: rgba(0, 0, 0, 0.80);
+    cursor: url(../../../images/Pointer.png) 2 2, pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .popup__button-retention{
+        width: 238px;
+        height: 46px;
+        margin: 45px 0 25px 0;
+        font-size: 14px;
+        line-height: 17px;
+}
+}

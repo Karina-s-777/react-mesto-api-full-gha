@@ -1,0 +1,9 @@
+.profile__person {
+    display: flex;
+}
+
+@media screen and (max-width: 1100px) {
+    .profile__person {
+        display: block;
+    }
+}

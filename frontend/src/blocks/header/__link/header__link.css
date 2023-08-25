@@ -1,0 +1,20 @@
+.header__link {
+    color: #FFF;
+    text-align: right;
+    font-size: 18px;
+    background-color: black;
+    text-align: right;
+    border: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 0 0 46px 0;
+margin: 0;
+text-decoration: none;
+}
+
+.header__link:hover {
+    opacity: 0.6000000238418579;
+    cursor: url(../../../images/Pointer.png) 2 2, pointer;
+}

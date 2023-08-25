@@ -1,0 +1,11 @@
+.elements__mask-group {
+    width: 282px;
+    height: 282px;
+    object-fit:cover;
+    display: block;
+    z-index: 1;
+}
+
+.elements__mask-group:hover {
+  cursor: url(../../../images/Pointer.png) 2 2, pointer;
+}

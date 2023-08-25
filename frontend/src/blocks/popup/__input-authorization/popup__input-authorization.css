@@ -1,0 +1,10 @@
+.popup__input-authorization {
+    color: #CCC;
+    font-size: 14px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: black;
+    border-bottom: 2px solid #CCC;
+}
