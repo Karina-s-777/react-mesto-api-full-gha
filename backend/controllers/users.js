@@ -8,8 +8,9 @@ const { default: mongoose } = require('mongoose');
 
 const { NODE_ENV, SECRET_KEY } = process.env;
 const BadRequestError = require('../errors/BadRequestError');
-const NotFoundError = require('../errors/NotFoundError');
 const ConflictError = require('../errors/ConflictError');
+const NotFoundError = require('../errors/NotFoundError');
+
 
 // npm
 const User = require('../models/user');
