@@ -267,7 +267,7 @@ function App() {
         setIsSuccess(true);
         setIsOpenPopupsSuccess(true);
         window.scrollTo(0, 0);
-        navigate("/sign-in");
+        navigate("/signin");
       })
       .catch((err) => {
         setIsSuccess(false);
@@ -282,7 +282,7 @@ function App() {
         <Routes>
           <Route path="*" element={<Navigate to="/" replace />} />
           <Route
-            path="/sign-up"
+            path="/signup"
             element={
               <>
                 <Header name="signup" />
@@ -291,7 +291,7 @@ function App() {
             }
           />
           <Route
-            path="/sign-in"
+            path="/signin"
             element={
               <>
                 <Header name="signin" />
