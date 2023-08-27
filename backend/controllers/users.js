@@ -7,7 +7,8 @@ const jwt = require('jsonwebtoken');
 const { default: mongoose } = require('mongoose');
 
 // значение по умолчанию
-const { SECRET_KEY = 'some-secret-key' } = process.env;
+// const { SECRET_KEY = 'some-secret-key' } = process.env;
+const { SECRET_KEY } = require('../utils/config');
 const BadRequestError = require('../errors/BadRequestError');
 const ConflictError = require('../errors/ConflictError');
 const NotFoundError = require('../errors/NotFoundError');
