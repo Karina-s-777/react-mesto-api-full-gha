@@ -6,11 +6,11 @@ const bcrypt = require('bcryptjs'); // импортируем bcrypt
 const jwt = require('jsonwebtoken');
 const { default: mongoose } = require('mongoose');
 
-const { NODE_ENV, SECRET_KEY } = process.env;
+// значение по умолчанию
+const { SECRET_KEY = 'some-secret-key' } = process.env;
 const BadRequestError = require('../errors/BadRequestError');
 const ConflictError = require('../errors/ConflictError');
 const NotFoundError = require('../errors/NotFoundError');
-
 
 // npm
 const User = require('../models/user');
@@ -83,12 +83,13 @@ module.exports.addUser = (req, res, next) => {
 };
 
 module.exports.login = (req, res, next) => {
+  console.log(SECRET_KEY);
   const { email, password } = req.body;
   return User.findUserByCredentials(email, password)
     .then((user) => {
       const token = jwt.sign(
         { _id: user._id },
-        NODE_ENV === 'production' ? SECRET_KEY : 'dev-secret',
+        SECRET_KEY,
         { expiresIn: '7d' },
       );
       res.send({ token });

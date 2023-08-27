@@ -5,7 +5,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs'); // импортируем bcrypt
 const UnauthorizedError = require('../errors/UnauthorizedError');
-// const ForbiddenError = require('../errors/ForbiddenError');
 // const urlRegex = require('../utils/constants');
 
 const userSchema = new mongoose.Schema({
