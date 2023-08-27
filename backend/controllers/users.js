@@ -84,7 +84,6 @@ module.exports.addUser = (req, res, next) => {
 };
 
 module.exports.login = (req, res, next) => {
-  console.log(SECRET_KEY);
   const { email, password } = req.body;
   return User.findUserByCredentials(email, password)
     .then((user) => {

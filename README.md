@@ -44,7 +44,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.28.209
+IP 158.160.28.209
 
 Frontend https://mesto.ks.students.nomoredomainsicu.ru
 
