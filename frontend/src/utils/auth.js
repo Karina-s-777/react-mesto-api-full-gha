@@ -7,7 +7,7 @@ function getResponseData(res) {
 
 //   запрос для регистрации в нашем сервисе
   export function auth(password, email) {
-    return fetch (`${baseUrl}/sign-up`, {
+    return fetch (`${baseUrl}/signup`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json" 
@@ -24,7 +24,7 @@ function getResponseData(res) {
 
 //   запрос для авторизации в нашем сервисе
   export function authorization (password, email) {
-    return fetch (`${baseUrl}/sign-in`, {
+    return fetch (`${baseUrl}/signin`, {
         method: "POST",
         headers: {
             'Content-Type' : "application/json"
