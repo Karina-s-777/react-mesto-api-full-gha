@@ -1,4 +1,4 @@
-const { HTTP_STATUS_CREATED, HTTP_STATUS_OK } = require('http2').constants;
+const { HTTP_STATUS_OK } = require('http2').constants;
 const { default: mongoose } = require('mongoose');
 const Card = require('../models/card');
 const NotFoundError = require('../errors/NotFoundError');
@@ -11,7 +11,7 @@ module.exports.getCards = (req, res, next) => {
   Card.find({})
     // .populate(['owner', 'likes'])
     .then((cards) => {
-      res.status(HTTP_STATUS_CREATED).send(cards);
+      res.status(HTTP_STATUS_OK).send(cards);
     })
     .catch(next);
 };
