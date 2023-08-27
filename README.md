@@ -44,8 +44,8 @@
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 158.160.28.209
 
-Frontend https://mesto.ks.students.nomoredomainsicu.r
+Frontend https://mesto.ks.students.nomoredomainsicu.ru
 
 Backend https://api.karina.nomoredomainsicu.ru
