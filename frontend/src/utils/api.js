@@ -31,18 +31,6 @@ class Api {
     }).then(this._checkResponse);
   }
 
-  setUserAvatar(data, token) {
-    return fetch(`${this._url}/users/me/avatar`, {
-      method: "PATCH",
-      headers: {
-        'Content-Type' : "application/json",
-            "Authorization" : `Bearer ${token}`
-      },
-      body: JSON.stringify({
-        avatar: data.avatar,
-      }),
-    }).then(this._checkResponse);
-  }
 
   setNewCard(data, token) {
     return fetch(`${this._url}/cards`, {
@@ -54,6 +42,19 @@ class Api {
       body: JSON.stringify({
         name: data.nameImage,
         link: data.link,
+      }),
+    }).then(this._checkResponse);
+  }
+
+  setUserAvatar(data, token) {
+    return fetch(`${this._url}/users/me/avatar`, {
+      method: "PATCH",
+      headers: {
+        'Content-Type' : "application/json",
+            "Authorization" : `Bearer ${token}`
+      },
+      body: JSON.stringify({
+        avatar: data.avatar,
       }),
     }).then(this._checkResponse);
   }
@@ -101,8 +102,8 @@ class Api {
 }
 
 const api = new Api({
-  // baseUrl: "https://api.karina.nomoredomainsicu.ru",
-  baseUrl: "http://localhost:3000",
+  baseUrl: "https://api.karina.nomoredomainsicu.ru",
+  // baseUrl: "http://localhost:3000",
 });
 
 

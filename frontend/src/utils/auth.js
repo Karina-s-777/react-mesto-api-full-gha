@@ -1,5 +1,5 @@
-// const baseUrl = "https://api.karina.nomoredomainsicu.ru"
-const baseUrl = "http://localhost:3000"
+const baseUrl = "https://api.karina.nomoredomainsicu.ru"
+// const baseUrl = "http://localhost:3000"
 // добавляем функцию, общую для всех запросов, как в api
 function getResponseData(res) {
     return res.ok ? res.json() : Promise.reject(`Ошибка ${res.status}  ${res.statusText}`);
@@ -36,7 +36,6 @@ function getResponseData(res) {
     })
     .then(res => getResponseData(res) )
   }
-
 //   запрос для проверки валидности токена и получения email для вставки в шапку сайта:
   export function getUserData (token) {
     return fetch (`${baseUrl}/users/me`, {
