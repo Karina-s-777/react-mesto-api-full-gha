@@ -3,7 +3,8 @@ import PopupWithForm from "../PopupWithForm/PopupWithForm.jsx";
 import useFormValidation from "../../hooks/useFormValidation.js";
 
 export default function AddPlacePopup({ isOpen, onClose, onAddPlace }) {
-  const { values, errors, isValid, isInputValid, handleChange, reset } =
+  const { values,
+    errors, isValid, isInputValid, handleChange, reset } =
     useFormValidation();
 
   function resetOnClose() {
