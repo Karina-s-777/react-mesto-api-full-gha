@@ -15,17 +15,17 @@ function Header({ name, isEmail }) {
         className="header__logo"
       />
       {name === "signup" ? (
-        <Link to="/signin" className="header__link">
+        <Link to="/sign-in" className="header__link">
           Войти
         </Link>
       ) : name === "signin" ? (
-        <Link to="/signup" className="header__link">
+        <Link to="/sign-up" className="header__link">
           Регистрация
         </Link>
       ) : (
         <div className="header__exit-container">
           <p className="header__email">{isEmail}</p>
-          <Link to="/signin" onClick={onSignOut} className="header__butten">
+          <Link to="/sign-in" onClick={onSignOut} className="header__butten">
             Выйти
           </Link>
         </div>

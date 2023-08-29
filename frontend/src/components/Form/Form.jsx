@@ -32,7 +32,7 @@ export default function Form({
             {nameButton}
           </button>
           {name === "signup" && (
-            <Link to="/signin" className="popup__link-transition">
+            <Link to="/sign-in" className="popup__link-transition">
               Уже зарегистрированы? Войти
             </Link>
           )}
